@@ -1,0 +1,24 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "main": "src/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mix": "mix watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.83.4",
+    "vite": "^6.0.7",
+    "vuejs": "^3.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^12.1.0"
+  }
+}
