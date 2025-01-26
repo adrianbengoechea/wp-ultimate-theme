@@ -11,7 +11,7 @@
             
             <test></test>
 
-            <counter></counter>
+            <!-- <counter></counter> -->
 
             <load-posts></load-posts>
 

@@ -1,3 +1,7 @@
+<template>
+    <button class="btn btn-primary" @click="count++">Count ({{count}})</button>
+</template>
+
 <script>
 export default {
     data(){
@@ -8,7 +12,5 @@ export default {
 }
 </script>
 
-<template>
-    <button class="btn btn-primary" @click="count++">Count ({{count}})</button>
-</template>
+
 

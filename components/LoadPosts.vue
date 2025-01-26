@@ -1,6 +1,28 @@
+<template>
+
+    <div class="py-4">
+        <button class="js--show-posts btn btn-primary me-2" @click="loadPosts()">Show Posts</button>
+        <button class="btn btn-primary" @click="count++">Count ({{count}})</button>
+    </div>
+    <ul class="py-4 js--show-posts-response">
+        <li v-for="post in trackedPosts">
+            <a :href="post.link" target="_blank"><strong>{{ post.title.rendered }}</strong></a>  
+        </li>
+    </ul>
+
+    <div class="py-4">
+        <counter></counter>
+    </div>
+
+</template>
+
 <script>
+import Counter from '../components/Counter.vue';
 
 export default {
+    components: {
+        Counter
+    },
     data(){
         const trackedPosts = [];
         const count = 0;
@@ -8,7 +30,7 @@ export default {
         return {
             trackedPosts, count
         }
-        
+
     },
     methods: {
         async loadPosts (){
@@ -40,41 +62,6 @@ export default {
         }
     }
 }
-
-// import { ref } from 'vue'
-// export default {
-
-//     setup() {
-        
-//         
-
-//         async function loadPosts () {
-
-//             
-
-//         }
-
-
-//         // expose to template and other options API hooks
-//         return {
-//             count, trackedPosts, loadPosts
-//         }
-//     }
-
-// }
 </script>
 
-<template>
-
-    <div class="py-4">
-        <button class="js--show-posts btn btn-primary me-2" @click="loadPosts()">Show Posts</button>
-        <button class="btn btn-primary" @click="count++">Count ({{count}})</button>
-    </div>
-    <ul class="py-4 js--show-posts-response">
-        <li v-for="post in trackedPosts">
-            <a :href="post.link" target="_blank"><strong>{{ post.title.rendered }}</strong></a>  
-        </li>
-    </ul>
-
-</template>
 
