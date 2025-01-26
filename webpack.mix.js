@@ -12,12 +12,13 @@ const distPath = path.resolve() + '/dist';
 mix.setPublicPath(themePath);
 
 mix.sass(resourcesPath + '/sass/main.scss', distPath + '/css').sourceMaps();
-mix.js(resourcesPath + '/js/main.js', distPath + '/js');
+mix.js(resourcesPath + '/js/main.js', distPath + '/js').vue();
 
 mix.browserSync({
     proxy: siteUrl,
     files: [
         `${themePath}/**/*.php`,
+        `${themePath}/**/*.vue`,
         `${themePath}/**/*.js`,
         `${themePath}/**/*.css`,
     ]

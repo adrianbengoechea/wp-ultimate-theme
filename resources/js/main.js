@@ -1,41 +1,19 @@
-(function(){
+import {createApp} from 'vue'
 
-    const siteAppID = '#site-app';
-    const { createApp, ref } = Vue
+import Test from '../../components/Test.vue'
+import Counter from '../../components/Counter.vue'
+import LoadPosts from '../../components/LoadPosts.vue'
 
-    createApp({
-      setup() {
-        const title = ref('Hello vue!')
-        const count = ref(0);
+createApp({
 
-        const endpoint = '/wp-json';
-        const postsEndpoint = endpoint + '/wp/v2/posts';
+  components: {
+    Test, Counter, LoadPosts
+  },
+  data(){
+    return {
+      count: 0,
+      title: 'Wordpress + VueJS'
+    }
+  }
 
-        const trackedPosts = ref([]);
-
-        async function loadPosts () {
-
-          console.log('load posts');
-
-          try {
-            const response = await fetch(postsEndpoint);
-            if (!response.ok) {
-              throw new Error(`Response status: ${response.status}`);
-            }
-
-            const json = await response.json();
-            console.log(json);
-
-            this.trackedPosts = json;
-          } catch (error) {
-            console.error(error.message);
-          }
-
-        }
-        return {
-          title, count, loadPosts, trackedPosts
-        }
-      }
-    }).mount( siteAppID )
-    
-})();
+}).mount('#site-app');
