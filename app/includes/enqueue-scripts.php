@@ -13,6 +13,7 @@ function theme_load_scripts() {
 	wp_enqueue_script( 'anime', 'https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js', array(), _THEME_VERSION, true );
 	wp_enqueue_script( 'simplebar', 'https://cdnjs.cloudflare.com/ajax/libs/simplebar/6.3.0/simplebar.min.js', array(), _THEME_VERSION, true );
 
+	wp_enqueue_script( 'app', get_stylesheet_directory_uri() . '/dist/js/app.js', array(), _THEME_VERSION, true );
 	wp_enqueue_script( 'main', get_stylesheet_directory_uri() . '/dist/js/main.js', array(), _THEME_VERSION, true );
 
 

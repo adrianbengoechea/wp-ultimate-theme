@@ -1,3 +1,5 @@
 <template>
-    only a test
+    <p class="text-gray-500 dark:text-gray-400">
+        only a test
+    </p>
 </template>

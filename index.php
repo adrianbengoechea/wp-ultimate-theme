@@ -6,8 +6,6 @@
         <div class="container--wrap">
 
             <h1>{{title}}</h1>
-
-            <button class="btn btn-primary" @click="count++">Count ({{count}})</button>
             
             <test></test>
 
