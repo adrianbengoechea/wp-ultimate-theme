@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import anime from 'animejs/lib/anime.es.js';
+
 import Counter from '../components/Counter.vue';
 
 export default {

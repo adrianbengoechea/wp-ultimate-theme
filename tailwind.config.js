@@ -1,12 +1,16 @@
 module.exports = {
   content: [
-    "./**/*.{html,php}",
+    "./**/*.vue",
+    "./**/*.php",
   ],
   theme: {
       extend: {},
   },
   plugins: [],
   purge: [
+    "./**/*.vue",
+    "./**/*.php",
+    
       './storage/framework/views/*.php',
       './resources/**/*.blade.php',
       './resources/**/*.js',

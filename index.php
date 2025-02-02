@@ -5,7 +5,7 @@
     <div class="container">
         <div class="container--wrap">
 
-            <h1>{{title}}</h1>
+            <h1 class="text-3xl font-bold underline">{{title}}</h1>
             
             <test></test>
 
