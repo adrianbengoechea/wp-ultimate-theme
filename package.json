@@ -4,7 +4,8 @@
   "main": "src/js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mix": "mix watch"
+    "mix": "mix watch",
+    "mix-build": "mix build"
   },
   "author": "",
   "license": "ISC",
@@ -13,26 +14,21 @@
     "animejs": "^3.2.2",
     "autoprefixer": "^10.4.20",
     "boostrap": "^2.0.0",
-    "imagemin-webpack-plugin": "^2.4.2",
+    "bootstrap": "^5.3.3",
     "normalize.css": "^8.0.1",
+    "popper": "^1.0.1",
     "resize-observer-polyfill": "^1.5.1",
-    "sass": "^1.83.4",
     "simplebar": "^6.3.0",
     "swiper": "^11.2.1",
-    "vite": "^6.0.7",
     "vue": "^3.5.13",
     "vue-loader": "^17.4.2",
     "vuejs": "^3.0.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.0.1",
-    "browser-sync": "^3.0.3",
-    "browser-sync-webpack-plugin": "^2.3.0",
     "laravel-mix": "^6.0.49",
-    "mix-tailwindcss": "^1.3.0",
     "postcss": "^8.5.1",
-    "postcss-sass": "^0.5.0",
     "resolve-url-loader": "^5.0.0",
+    "sass": "^1.83.4",
     "sass-loader": "^12.1.0"
   }
 }

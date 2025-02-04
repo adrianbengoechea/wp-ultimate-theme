@@ -10,6 +10,8 @@
 # REQUIRED INCLUDES
 require "app/includes/constants.php";
 
+require "app/includes/api-rest.php";
+
 require "app/includes/acf-content-helpers.php";
 require "app/includes/acf-json.php";
 

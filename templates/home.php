@@ -5,7 +5,13 @@ get_header(); ?>
 
 <main role="main">
   
-    homepage
+    <!-- <title :text="<?php echo get_the_title(); ?>"></title> -->
+
+    <!-- <counter></counter> -->
+
+    <posts-display-and-filtering>
+
+    <modal></modal>
 
 </main>
 

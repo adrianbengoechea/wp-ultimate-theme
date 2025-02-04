@@ -11,7 +11,9 @@
 
             <!-- <counter></counter> -->
 
-            <load-posts></load-posts>
+            <posts-display-and-filtering>
+
+            <modal></modal>
 
 
 

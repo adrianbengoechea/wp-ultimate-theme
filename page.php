@@ -18,6 +18,17 @@ get_header();
 
 <main role="main">
 
+  <h1 class="text-3xl font-bold underline">{{title}}</h1>
+              
+  <test></test>
+
+  <!-- <counter></counter> -->
+
+  <posts-display-and-filtering>
+
+  <modal></modal>
+
+
 <?php get_template_part( 'partials/content', 'page' ); ?>
 
 </main>

@@ -8,21 +8,14 @@ const distPath = path.resolve() + '/dist';
 
 mix.setPublicPath(themePath);
 
-mix.js(resourcesPath + '/js/app.js', distPath + '/js').vue().postCss(resourcesPath + '/css/app.css', distPath + '/css', [
-    '@tailwindcss/postcss'
-])
+mix.js(resourcesPath + '/js/app.js', distPath + '/js').vue();
+mix.js(resourcesPath + '/js/main.js', distPath + '/js');
 
-mix.js(resourcesPath + '/js/custom.js', distPath + '/js');
 
-const siteUrl = 'study.wordpress-and-vuejs.local';
-mix.browserSync({
-    proxy: siteUrl,
-    files: [
-        `${themePath}/**/*.php`,
-        `${themePath}/app/**/*.php`,
-        `${themePath}/**/*.vue`,
-        `${themePath}/**/*.js`,
-        `${themePath}/**/*.css`,
-        `${themePath}/**/*.scss`,
-    ]
-});
+mix.postCss(resourcesPath + '/css/app.css', distPath + '/css');
+
+// mix.sass(resourcesPath + '/sass/app.scss', distPath + '/css');
+
+// mix.js(resourcesPath + '/js/app.js', distPath + '/js').vue().postCss(resourcesPath + '/css/app.css', distPath + '/css', [
+//     '@tailwindcss/postcss'
+// ])
